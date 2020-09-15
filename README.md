@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +67,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+=======
+# pmb-stat-client
+Penyimpanan untuk pembangunan sistem informasi website Statistik Data kegiatan Penerimaan Mahasiswa Baru (PMB) Universitas Katolik Parahyangan
+>>>>>>> bd1453be0e8e3feb2d1c61e9059302cc76f6cb4e
