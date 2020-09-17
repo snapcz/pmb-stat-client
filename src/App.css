@@ -1,5 +1,14 @@
+@font-face {
+  font-family: "Mulish Bold";
+  src: url("/fonts/Mulish-Bold.ttf");
+}
+
 .App {
   text-align: center;
+  background-color: #282c34;
+  color: rgb(204, 204, 204);
+  width: 100vw;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +44,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.title{
+  font-family:"Mulish Bold";
+  padding: 30px 0px;
+  font-size: xx-large;
 }
