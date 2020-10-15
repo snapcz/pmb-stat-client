@@ -6,18 +6,25 @@
     "@amcharts/amcharts4": "^4.10.2",
     "@amcharts/amcharts4-fonts": "^4.0.1",
     "@amcharts/amcharts4-geodata": "^4.1.17",
+    "@material-ui/core": "^4.11.0",
+    "@nivo/line": "^0.62.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.20.0",
     "jquery": "^3.5.1",
+    "material-table": "^1.69.1",
+    "nivo": "^0.31.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.3.0",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "recharts": "^1.8.5",
+    "serve": "^11.3.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "cross-env PORT=3006 serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -36,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
   }
 }

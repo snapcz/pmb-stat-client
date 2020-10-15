@@ -1,0 +1,44 @@
+import os
+import pandas as pd
+import numpy as np
+from matplotlib import pyplot as plt
+
+#read necessary data
+os.chdir("D:\\Kuliah\\Semester 7\\Prosi 2\\Data")
+df_pmdk = pd.read_excel("PMDK\\03_Data_Peminat_PMDK_2013_2018.xlsx")
+prodi_dict = {110:'Ekonomi Pembangunan',
+              120:'Manajemen',
+              130:'Akuntansi',
+              200:'Ilmu Hukum',
+              310:'Ilmu Administrasi Publik',
+              320:'Ilmu Administrasi Bisnis',
+              330:'Ilmu Hubungan Internasional',
+              410:'Teknik Sipil',
+              420:'Aristektur',
+              510:'Ilmu Filsafat',
+              610:'Teknik Industri',
+              620:'Teknik Kimia',
+              630:'Teknik Elektro',
+              710:'Matematika',
+              720:'Fisika',
+              730:'Teknik Informatika',
+              910:'D3 Manajemen Perusahaan'
+              }
+
+
+df_pmdk_ts = df_pmdk[df_pmdk.V_KODE_PROGRAM_STUDI_PILIHAN == 420]
+df_pmdk_hi = df_pmdk[df_pmdk.V_KODE_PROGRAM_STUDI_PILIHAN == 330]
+
+####test plot
+df_pmdk_ts = df_pmdk_ts[df_pmdk_ts.V_TAHUN == 2017]
+df_pmdk_hi = df_pmdk_hi[df_pmdk_hi.V_TAHUN == 2017]
+
+df_pmdk_ts_res = df_pmdk_ts.groupby('V_KET_STATUS_SEKOLAH').count()['F_STATUS']
+df_pmdk_hi_res = df_pmdk_hi.groupby('V_KET_STATUS_SEKOLAH').count()['F_STATUS']
+
+plt.figure(figsize=(12,8))
+plt.bar(np.arange(1,4,2),df_pmdk_ts_res.values,width=0.5,color='#eb403440')
+plt.bar([1.5,3.5],df_pmdk_hi_res.values,width=0.5,color='#34b7eb40')
+plt.xlim(0,5)
+plt.xticks(np.arange(1,4,2),df_pmdk_ts_res.index.values)
+plt.show()
