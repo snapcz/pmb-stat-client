@@ -36,3 +36,292 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face{
+  font-family: Mulish;
+  src: url('/fonts/Mulish-Regular.ttf');
+}
+
+#welcome{
+  position: absolute;
+  width: 441px;
+  height: 63px;
+  left: 65.6px;
+  top: 44.8px;
+
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+#title{
+  position: absolute;
+  width: 1166px;
+  height: 190px;
+  left: 65.6px;
+  top: 68px;
+
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+#btn-continue{
+  position: absolute;
+  width: 480.8px;
+  height: 141.6px;
+  left: 519.2px;
+  top: 279.1px;
+  display:flex;
+  flex-direction:row;
+  background: #50B0D8;
+  filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.25));
+}
+
+#text{
+  flex-grow: 1;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  margin:auto;
+  text-align:center;
+  color: #FFFFFF;
+}
+
+#click{
+  flex-grow: 1;
+  height:100%;
+  background: #FFFFFF;
+  color: #50B0D8;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+#chevron{
+  text-align:center;
+  font-size: 96px;
+}
+
+#chevron > i{
+  margin-right:-10px;
+  margin-left: -10px;
+}
+
+#unpar{
+  width: 300px;
+  height: 310.51px;
+  position:absolute;
+  top: 400px;
+  left: 1107.2px;
+}
+
+/*footer*/
+#footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #3B809D;
+}
+
+#footer-container{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer-img{
+  height: 55px;
+  background: #FFFFFF;
+  width: 220px;
+  border: 1px #FFFFFF solid;
+  border-radius: 10px;
+  margin-top:10px;
+  text-align: center;
+}
+
+#footer-img > img{
+  height:40px;
+  margin-top:6px;
+}
+
+#footer-text{
+  color: white;
+  margin-left: 40px;
+}
+
+
+/*Home*/
+
+#home{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:100px;
+}
+
+.home-item-container{
+  color: black;
+  margin-top: 40px;
+  width:80%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+}
+
+.home-item-container-2{
+  color: black;
+  margin-top: 40px;
+  width:55%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+}
+
+.about-text{
+  width:30%;
+  align-items: center;
+}
+
+.about-text-2{
+  width:100%;
+  align-items: center;
+}
+
+.about-title{
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.about-item{
+  margin-top: 30px;
+  display:flex;
+  width:100%;
+  flex-direction: row;
+}
+
+.about-item-text-1,.about-item-text-2{
+  flex:1;
+  height:130px;
+}
+
+.about-item-text-1{
+  background: rgba(171, 171, 171,0.1);
+}
+
+.left-rad{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.right-rad{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.about-item-text-2{
+  background: #385A64;
+  color: white;
+  align-items: center;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 36px;
+  font-weight:bold;
+}
+
+.about-item-text-2:hover{
+  background: #FF9198;
+  cursor: pointer;
+}
+
+.about-number{
+  font-weight: bold;
+  font-size: 36px;
+  width:fit-content;
+}
+
+.about-choice{
+  text-align: left;
+  margin: 25px 20px;
+}
+
+.m-30{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#web-img{
+  width: 450px;
+}
+
+#dev-img{
+  width:350px;
+}
+
+/*home modal*/
+.home-dialog > div{
+  max-width: 100vw !important;
+  width: 90vw !important;
+  margin: 0rem auto !important;
+}
+
+.home-header{
+  justify-content:center !important;
+  background-color: #3B809D !important;
+  color: white;
+  padding: 4px 0px !important;
+  border-bottom: 0px !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.home-title{
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+
+.home-body{
+  background-color: #343030;
+  color: white;
+}
+
+.prodi-choice-col{
+  border: 3px solid #3B809D !important;
+  border-radius: 5px;
+  height: 75px !important;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 10px !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  max-width: 360px !important;
+}
+
+.prodi-choice-col:hover{
+  background-color: #3B809D;
+  cursor: pointer;
+}
