@@ -1,12 +1,18 @@
 import React, {useState} from "react";
+import { useHistory } from 'react-router-dom'
 import Footer from "../Component/footer";
 import {Modal, Container, Row, Col} from 'react-bootstrap'
 
 function Homepage() {
   const [show, setShow] = useState(false);
+  const history = useHistory();
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const redir = () => {
+      history.push("/unpar")
+  }
 
   return (
     <>
@@ -56,7 +62,7 @@ function Homepage() {
                 menyeluruh dari level universitas
               </div>
             </div>
-            <div class="about-item-text-2">
+            <div class="about-item-text-2" onClick={redir}>
               <div>UNPAR</div>
             </div>
           </div>
