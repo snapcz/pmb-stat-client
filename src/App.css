@@ -328,7 +328,7 @@
 
 .title{
   font-family:"Mulish Bold";
-  padding: 30px 0px;
+  padding: 0px 0px 30px 0px;
   font-size: xx-large;
   text-align: center;
 }
@@ -336,8 +336,110 @@
 .map_container{
   display:flex;
   justify-content: center;
-  width:65%;
+}
+
+#chartdiv{
+  background-color: #222222 !important;
+  height: 500px;
+  border: 3px solid gray;
+  border-radius: 10px;
+  min-width:800px;
 }
 
 .map_main{
+  text-align: center;
+  background-color: #ffffff;
+  color: rgb(0, 6, 31);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar{
+  width:100%;
+  background-color: #3B809D;
+  height:40px;
+}
+
+#konfigurasi{
+  background-color: #595959;
+  width:fit-content;
+  height:100%;
+  color:white;
+  font-weight: bold;
+  padding: 5px 5px;
+}
+
+#konfigurasi > i{
+  color: #BFBFBF;
+  margin-left: 5px;
+}
+.chart-img{
+  width: 650px;
+  height:400px;
+}
+
+#tentang{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.mt{
+  margin-top:70px
+}
+
+.map-subtext{
+  display:flex;
+  flex-direction: row;
+}
+
+.subtext-title{
+  display:inline-block;
+  text-align: right;
+  font-weight: bolder;
+}
+
+.subtext-body{
+  display: inline-block;
+  max-width: 500px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.centered{
+  text-align: center;
+}
+
+.button-cnt{
+  margin-top:20px;
+  display:inline-block;
+}
+
+.button-cnt Button{
+  width:100px;
+  background-color: gray;
+  border: 1px gray solid;
+  margin: 0px 10px;
+}
+
+.ext-btm{
+  margin-bottom:100px;
+}
+
+.tabel-main{
+  text-align: center;
+}
+
+#long-chart-cnt{
+  padding:20px 20px;
+  border: 3px solid gray;
+  border-radius:15px;
+}
+
+#img1 > img, #img2 > img {
+  width:720px;
 }
