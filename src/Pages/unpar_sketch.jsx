@@ -7,7 +7,7 @@ function UnparPage() {
     const [state, setState] = useState(null);
   
     return (
-      <div>
+      <div className="map_main">
         <div className="title">
           PETA SEBARAN TOTAL PARTISIPAN PMDK UNPAR 2013-2018
         </div>
